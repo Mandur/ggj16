@@ -27,8 +27,16 @@ ExportedObj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
+<<<<<<< HEAD
+ProjectSettings/ProjectSettings.asset
+=======
 Assets/Scenes/Test_pyramide002.unity
 
 Assets/Scenes/Test_pyramide002.unity
 
 Assets/Scenes/Test_pyramide002.unity
+>>>>>>> origin/master
+
+Assets/Scenes/Test_pyramide002.unity
+
+ProjectSettings/ProjectSettings.asset
