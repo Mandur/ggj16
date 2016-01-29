@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: TheGodsAreNotToBlame
+  productName: ggj16
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -65,10 +65,6 @@ PlayerSettings:
   n3dsDisableStereoscopicView: 0
   n3dsEnableSharedListOpt: 1
   n3dsEnableVSync: 0
-<<<<<<< HEAD
-=======
-  uiUse16BitDepthBuffer: 0
->>>>>>> origin/master
   xboxOneResolution: 0
   ps3SplashScreen: {fileID: 0}
   videoMemoryForVertexBuffers: 0
@@ -96,15 +92,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-<<<<<<< HEAD
-  productGUID: bfa244cd8704b4f4bb3c86ee152b6421
-=======
-<<<<<<< HEAD
-  productGUID: ab064ff85da473e458ea1e4779dd9f6d
-=======
-  productGUID: d6fc8ae44464c4965b0e17e2d8522553
->>>>>>> origin/master
->>>>>>> origin/master
+  productGUID: 0f37f132423f94c12bc9f8e119081898
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -140,10 +128,6 @@ PlayerSettings:
   iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
   iPadHighResLandscapeSplashScreen: {fileID: 0}
-<<<<<<< HEAD
-=======
-  appleTVSplashScreen: {fileID: 0}
->>>>>>> origin/master
   iOSLaunchScreenType: 0
   iOSLaunchScreenPortrait: {fileID: 0}
   iOSLaunchScreenLandscape: {fileID: 0}
@@ -263,15 +247,7 @@ PlayerSettings:
   ps4ApplicationParam4: 0
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
-<<<<<<< HEAD
-  ps4Passcode: 5xr84P2R391UXaLHbavJvFZGfO47XWS2
-=======
-<<<<<<< HEAD
-  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
-=======
-  ps4Passcode: K5RhRXdCdG5nG5azdNMK66MuCV6GXi5x
->>>>>>> origin/master
->>>>>>> origin/master
+  ps4Passcode: OuSpM2Tlh01vOzwvSikHFswuzleht6xG
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -301,15 +277,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-<<<<<<< HEAD
-  psp2PackagePassword: qVOw5lxuBEBNue7b9PZS0hoI6pgabi9U
-=======
-<<<<<<< HEAD
-  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
-=======
-  psp2PackagePassword: r84P2R391UXaLHbavJvFZGfO47XWS2qV
->>>>>>> origin/master
->>>>>>> origin/master
+  psp2PackagePassword: botuQQgmO6GkdAqwedXNRRadbLMZROaA
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -341,22 +309,17 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-<<<<<<< HEAD
   metroPackageName: ggj16
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
   metroPackageLogo240: 
-=======
-  metroPackageName: TheGodsAreNotToBlame
->>>>>>> origin/master
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-<<<<<<< HEAD
   metroApplicationDescription: ggj16
   metroStoreTileLogo80: 
   metroStoreTileLogo: 
@@ -396,10 +359,6 @@ PlayerSettings:
   metroPhoneSplashScreenImage: 
   metroPhoneSplashScreenImage140: 
   metroPhoneSplashScreenImage240: 
-=======
-  metroApplicationDescription: TheGodsAreNotToBlame
-  wsaImages: {}
->>>>>>> origin/master
   metroTileShortName: 
   metroCommandLineArgsFile: 
   metroTileShowName: 0
@@ -475,22 +434,7 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
-<<<<<<< HEAD
   - WebPlayer::ScriptingBackend
-=======
-<<<<<<< HEAD
-  - Android::ScriptingBackend
-  - Metro::ScriptingBackend
-  - Standalone::ScriptingBackend
-  - WebPlayer::ScriptingBackend
-  Android::ScriptingBackend: 0
-  Metro::ScriptingBackend: 2
-=======
-  - Standalone::ScriptingBackend
-  - WebPlayer::ScriptingBackend
->>>>>>> origin/master
-  Standalone::ScriptingBackend: 0
->>>>>>> origin/master
   WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
   - XboxOne::enus
