@@ -22,6 +22,9 @@ public class LauncherController : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// Set the power at which the launcher launch the bullet
+    /// </summary>
     private void LauncherPower()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -35,11 +38,15 @@ public class LauncherController : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet,this.transform.position,this.transform.rotation);
-            bullet.AddForce(bullet.transform.forward* BulletSpeed);
+            bullet.velocity =this.transform.right*BulletSpeed;
             
         }
     }
 
+
+    /// <summary>
+    /// set the rotation of the launcher
+    /// </summary>
     private void LauncherRotation()
     {
         if (Input.GetKey(KeyCode.RightArrow))
