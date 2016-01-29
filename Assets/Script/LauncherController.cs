@@ -5,7 +5,6 @@ public class LauncherController : MonoBehaviour {
 
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
-    public float BulletSpeed;
     private int power = 0;
 
 	// Use this for initialization
