@@ -51,9 +51,9 @@ public class LauncherController : MonoBehaviour {
     private void LauncherRotation()
     {
 
-        if (Input.GetAxis("Horizontal")!=0)
+        if (Input.GetAxis("RightStickHorizontal") !=0)
         {
-            this.transform.Rotate(new Vector3(0, 0, -Input.GetAxis("Horizontal")));
+            this.transform.Rotate(new Vector3(0, 0, Input.GetAxis("RightStickHorizontal")));
         }
        
     }
