@@ -27,18 +27,19 @@ public class LauncherController : MonoBehaviour {
     /// </summary>
     private void LauncherPower()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
             this.isLaunching = true;
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetButton("Fire1"))
         {
             this.power += 1;
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetButtonUp("Fire1"))
         {
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet,this.transform.position,this.transform.rotation);
-            bullet.velocity =this.transform.right*BulletSpeed;
+            bullet.velocity =this.transform.right*this.power;
+            this.power = 0;
             
         }
     }
@@ -49,13 +50,11 @@ public class LauncherController : MonoBehaviour {
     /// </summary>
     private void LauncherRotation()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+
+        if (Input.GetAxis("Horizontal")!=0)
         {
-            this.transform.Rotate(new Vector3(0, 0, -1));
+            this.transform.Rotate(new Vector3(0, 0, -Input.GetAxis("Horizontal")));
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            this.transform.Rotate(new Vector3(0, 0, 1));
-        }
+       
     }
 }
