@@ -92,7 +92,11 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
+<<<<<<< Updated upstream
   productGUID: 0f37f132423f94c12bc9f8e119081898
+=======
+  productGUID: c2362efaa71eb4edb836a43977163189
+>>>>>>> Stashed changes
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -247,7 +251,11 @@ PlayerSettings:
   ps4ApplicationParam4: 0
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
+<<<<<<< Updated upstream
   ps4Passcode: OuSpM2Tlh01vOzwvSikHFswuzleht6xG
+=======
+  ps4Passcode: 84P2R391UXaLHbavJvFZGfO47XWS2qVO
+>>>>>>> Stashed changes
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -277,7 +285,11 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
+<<<<<<< Updated upstream
   psp2PackagePassword: botuQQgmO6GkdAqwedXNRRadbLMZROaA
+=======
+  psp2PackagePassword: w5lxuBEBNue7b9PZS0hoI6pgabi9UOuS
+>>>>>>> Stashed changes
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -434,7 +446,13 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
+<<<<<<< Updated upstream
   - WebPlayer::ScriptingBackend
+=======
+  - Standalone::ScriptingBackend
+  - WebPlayer::ScriptingBackend
+  Standalone::ScriptingBackend: 0
+>>>>>>> Stashed changes
   WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
   - XboxOne::enus
