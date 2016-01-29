@@ -96,7 +96,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: c725dca6a3ce44bb4b7ea3f4ef6902bc
+  productGUID: d6fc8ae44464c4965b0e17e2d8522553
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -256,7 +256,7 @@ PlayerSettings:
   ps4ApplicationParam4: 0
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
-  ps4Passcode: 5PN2qmWqBlQ9wQj99nsQzldVI5ZuGXbE
+  ps4Passcode: K5RhRXdCdG5nG5azdNMK66MuCV6GXi5x
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -293,7 +293,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: WRK5RhRXdCdG5nG5azdNMK66MuCV6GXi
+  psp2PackagePassword: r84P2R391UXaLHbavJvFZGfO47XWS2qV
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -410,17 +410,8 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
-<<<<<<< HEAD
   - Standalone::ScriptingBackend
   - WebPlayer::ScriptingBackend
-=======
-  - Android::ScriptingBackend
-  - Metro::ScriptingBackend
-  - Standalone::ScriptingBackend
-  - WebPlayer::ScriptingBackend
-  Android::ScriptingBackend: 0
-  Metro::ScriptingBackend: 2
->>>>>>> origin/master
   Standalone::ScriptingBackend: 0
   WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
