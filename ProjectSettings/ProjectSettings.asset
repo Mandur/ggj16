@@ -410,8 +410,17 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
+<<<<<<< HEAD
   - Standalone::ScriptingBackend
   - WebPlayer::ScriptingBackend
+=======
+  - Android::ScriptingBackend
+  - Metro::ScriptingBackend
+  - Standalone::ScriptingBackend
+  - WebPlayer::ScriptingBackend
+  Android::ScriptingBackend: 0
+  Metro::ScriptingBackend: 2
+>>>>>>> origin/master
   Standalone::ScriptingBackend: 0
   WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
