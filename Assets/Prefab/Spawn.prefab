@@ -41,8 +41,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
+  - {fileID: 105390, guid: f16fa2423f7504a599e2e828893dbb87, type: 2}
   spawnEvery: 1
-  direction: 1
+  side: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -52,7 +53,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: characters.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: characters
@@ -76,6 +77,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: characters.Array.data[0]
+      value: 
+      objectReference: {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: characters.Array.data[1]
+      value: 
+      objectReference: {fileID: 105390, guid: f16fa2423f7504a599e2e828893dbb87, type: 2}
+    - target: {fileID: 0}
+      propertyPath: characters.Array.data[2]
       value: 
       objectReference: {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
     m_RemovedComponents: []

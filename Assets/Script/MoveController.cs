@@ -6,6 +6,7 @@ public class MoveController : MonoBehaviour
 
     public float speed = 0.5f;
     public int side = 0;
+    public bool grounded = true;
     // Use this for initialization
     void Start()
     {
@@ -15,9 +16,11 @@ public class MoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        int direction = side == 0 ? 1 : -1;
-        GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0f);
+        if (grounded)
+        {
+            int direction = side == 0 ? 1 : -1;
+            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0f);
+        }
 
         // Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
         // bullet.velocity = this.transform.right * this.power;
