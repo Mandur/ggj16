@@ -7,7 +7,7 @@ public class LauncherController : MonoBehaviour
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
     private int power = 0;
-    private bool selected = false;
+    //private bool selected = false;
     public ScoreManager score;
     public int side = 0;
 
@@ -51,13 +51,13 @@ public class LauncherController : MonoBehaviour
         }
 
         // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
-        
 
 
-        if (Input.GetButtonDown("Fire1"))
+
+        if (Input.GetButtonDown("j" + side + "Fire1"))
         {
             this.isLaunching = true;
-            
+
         }
     }
 
@@ -66,22 +66,22 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void LauncherPower()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("j" + side + "Fire1"))
         {
             this.power += 1;
             this.transform.localScale += new Vector3(0.005f, 0.005f);
         }
 
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("j" + side + "Fire1"))
         {
             //Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
             //bullet.velocity = this.transform.right * this.power;
 
-            target.GetComponent<Rigidbody2D>().velocity = this.transform.right * this.power *0.1f;
+            target.GetComponent<Rigidbody2D>().velocity = this.transform.right * this.power * 0.1f;
             target.GetComponent<MoveController>().grounded = false;
             FindACharToPoint();
-             //score.addScore(0, 5);
-             ResetLauncher();
+            //score.addScore(0, 5);
+            ResetLauncher();
         }
     }
 
@@ -106,38 +106,38 @@ public class LauncherController : MonoBehaviour
     {
 
         //You may have to play around with/switch the y and x
-        var angle = Mathf.Atan2(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal")) * Mathf.Rad2Deg;
+        var angle = Mathf.Atan2(Input.GetAxis("j" + side + "Vertical"), Input.GetAxis("j" + side + "Horizontal")) * Mathf.Rad2Deg;
         this.transform.rotation = Quaternion.Euler(0, 0, angle);
 
 
     }
     private void CheckSelection()
     {
-        var input = Input.GetAxis("Horizontal");
-        //  Debug.Log(selectionTimer+"*"+ Time.deltaTime);
+        var input = Input.GetAxis("j" + side + "Horizontal");
+        Debug.Log("CheckSelection()" + input + " * " + selectionTimer + "*" + Time.deltaTime);
         selectionTimer -= Time.deltaTime;
-        if (Mathf.Abs(input) > 0.1 && selectionTimer <= 0)
+        if (Mathf.Abs(input) > 0.6 && selectionTimer <= 0)
         {
             FindNextCharToPoint(Mathf.Sign(input));
         }
 
-        if (Mathf.Abs(input) < 0.1)
+        if (Mathf.Abs(input) < 0.4)
         {
             selectionTimer = 0;
         }
-        
+
     }
     private void UpdatePosition()
     {
         //Debug.Log(target + "*"+side);
         if (target == null)
         {
-             FindACharToPoint();
+            FindACharToPoint();
         }
-        
+
         if (target != null)
         {
-           transform.position = target.transform.position + new Vector3(0, 0.55f);
+            transform.position = target.transform.position + new Vector3(0, 0.55f);
         }
     }
     private void FindACharToPoint()
@@ -147,7 +147,8 @@ public class LauncherController : MonoBehaviour
         foreach (GameObject c in objs)
         {
             if (c.GetComponent<MoveController>().side == this.side
-                  && c.GetComponent<MoveController>().grounded) { 
+                  && c.GetComponent<MoveController>().grounded)
+            {
                 target = c;
                 return;
             }
@@ -161,10 +162,12 @@ public class LauncherController : MonoBehaviour
         float maxDist = 10000000f;
         foreach (GameObject c in objs)
         {
+            //Debug.Log(c+"*"+c.GetComponent<MoveController>());
             if (c.GetComponent<MoveController>().side == side
                 && c.GetComponent<MoveController>().grounded
-                && ((direction < 0 && target.transform.position.x > c.transform.position.x) 
-                || (direction > 0 && target.transform.position.x < c.transform.position.x))) {
+                && ((direction < 0 && target.transform.position.x > c.transform.position.x)
+                || (direction > 0 && target.transform.position.x < c.transform.position.x)))
+            {
                 float dist = Mathf.Abs(target.transform.position.x - c.transform.position.x);
                 if (dist < maxDist)
                 {

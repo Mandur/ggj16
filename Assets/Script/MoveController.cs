@@ -27,10 +27,15 @@ public class MoveController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Ground")
+
+        //Debug.Log("MoveController.OnCollisionEnter2D()");
+        if (coll.gameObject.tag == "Ground" && !grounded)
         {
-            this.grounded = true;
-            CheckSide();
+            Destroy(gameObject);
+        }
+        if (grounded && coll.gameObject.tag == "Player" && coll.gameObject.GetComponent<MoveController>().side != side)
+        {
+            Destroy(gameObject);
         }
 
     }
