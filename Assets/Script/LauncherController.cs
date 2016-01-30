@@ -146,6 +146,7 @@ public class LauncherController : MonoBehaviour
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject c in objs)
         {
+            if(c.GetComponent<MoveController>()!=null)
             if (c.GetComponent<MoveController>().side == this.side
                   && c.GetComponent<MoveController>().grounded)
             {
