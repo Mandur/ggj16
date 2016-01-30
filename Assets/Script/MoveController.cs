@@ -4,10 +4,12 @@ using System.Collections;
 public class MoveController : MonoBehaviour
 {
 
-    public float speed = 0.5f;
+    private float speed = 0.3f;
     public int side = 0;
     public bool grounded = true;
+    public bool disabled = false;
     public bool onPyramid = false;
+    
     // Use this for initialization
     void Start()
     {
@@ -17,15 +19,19 @@ public class MoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (onPyramid)
+        if (!disabled)
         {
-            int direction = side == 0 ? 1 : -1;
-            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, speed);
-        }
-        else
-        {
-            int direction = side == 0 ? 1 : -1;
-            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0);
+            if (onPyramid)
+            {
+                int direction = side == 0 ? 1 : -1;
+                GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, speed);
+            }
+
+            else
+            {
+                int direction = side == 0 ? 1 : -1;
+                GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0);
+            }
         }
 
         // Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
@@ -35,7 +41,10 @@ public class MoveController : MonoBehaviour
     {
         if (coll.gameObject.tag == "Pyramide")
         {
-            onPyramid = true;
+            if (grounded == true)
+                onPyramid = true;
+            else
+                Destroy(this);
         }
         else
         {
@@ -44,11 +53,11 @@ public class MoveController : MonoBehaviour
 
         if (coll.gameObject.tag == "Ground" && !grounded)
         {
-            Destroy(gameObject);
+            Destroy(coll.gameObject);
         }
         if (grounded && coll.gameObject.tag == "Player" && coll.gameObject.GetComponent<MoveController>().side != side)
         {
-            Destroy(gameObject);
+            Destroy(coll.gameObject);
         }
 
     }
@@ -59,6 +68,18 @@ public class MoveController : MonoBehaviour
             ScoreManager sm = Object.FindObjectOfType<ScoreManager>();
             sm.addScore(side, 1);
             Destroy(gameObject);
+        }
+
+        if (disabled)
+        {
+            if (coll.gameObject.GetComponent<MoveController>().side != side)
+            {
+                Destroy(coll.gameObject);   
+            }
+            else
+            {
+                Destroy(this);
+            }
         }
 
         //sm.

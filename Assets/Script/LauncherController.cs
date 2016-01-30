@@ -6,7 +6,7 @@ public class LauncherController : MonoBehaviour
 
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
-    private int power = 0;
+    private int power = 1000;
     //private bool selected = false;
     public ScoreManager score;
     public int side = 0;
@@ -44,11 +44,10 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void CheckLaunch()
     {
-       
-        if (Input.GetButtonDown("j" + side + "Fire1"))
+        string input = "j" + side + "Fire1";
+        if (Input.GetButtonDown(input))
         {
-            this.isLaunching = true;
-
+                this.isLaunching = true;
         }
     }
 
@@ -65,9 +64,15 @@ public class LauncherController : MonoBehaviour
 
         if (Input.GetButtonUp("j" + side + "Fire1"))
         {
-            target.GetComponent<Rigidbody2D>().velocity = this.transform.right * this.power * 0.1f;
+            target.transform.rotation = this.transform.rotation;
+            target.GetComponent<Rigidbody2D>().AddForce(target.transform.right * 8*power);
             target.GetComponent<MoveController>().grounded = false;
-            FindACharToPoint();
+            target.GetComponent<MoveController>().onPyramid = false;
+            target.GetComponent<MoveController>().disabled = true;
+            target.GetComponent<CircleCollider2D>().isTrigger = true;
+            Destroy(target,5);
+            //FindACharToPoint();
+            CheckSelection();
             ResetLauncher();
         }
     }
