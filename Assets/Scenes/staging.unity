@@ -256,6 +256,8 @@ GameObject:
   - 4: {fileID: 539114318}
   - 212: {fileID: 539114317}
   - 95: {fileID: 539114316}
+  - 50: {fileID: 539114319}
+  - 61: {fileID: 539114320}
   m_Layer: 0
   m_Name: maya_0
   m_TagString: Untagged
@@ -322,6 +324,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!50 &539114319
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539114315}
+  m_UseAutoMass: 0
+  m_Mass: 0.011435833
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &539114320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539114315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.0015149117, y: 0.007574916}
+  serializedVersion: 2
+  m_Size: {x: 0.07457263, y: 0.1533516}
 --- !u!1 &771191319
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +528,8 @@ GameObject:
   - 4: {fileID: 1703673658}
   - 212: {fileID: 1703673657}
   - 95: {fileID: 1703673656}
+  - 50: {fileID: 1703673660}
+  - 61: {fileID: 1703673659}
   m_Layer: 0
   m_Name: gros_0
   m_TagString: Untagged
@@ -561,3 +596,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!61 &1703673659
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703673655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.0015149117, y: 0.007574916}
+  serializedVersion: 2
+  m_Size: {x: 0.07457263, y: 0.1533516}
+--- !u!50 &1703673660
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703673655}
+  m_UseAutoMass: 0
+  m_Mass: 0.011435833
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
