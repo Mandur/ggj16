@@ -7,6 +7,7 @@ public class MoveController : MonoBehaviour
     public float speed = 0.5f;
     public int side = 0;
     public bool grounded = true;
+    public bool onPyramid = false;
     // Use this for initialization
     void Start()
     {
@@ -16,10 +17,15 @@ public class MoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (grounded)
+        if (onPyramid)
         {
             int direction = side == 0 ? 1 : -1;
-            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0f);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, speed);
+        }
+        else
+        {
+            int direction = side == 0 ? 1 : -1;
+            GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0);
         }
 
         // Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
@@ -27,8 +33,11 @@ public class MoveController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D coll)
     {
+        if (coll.gameObject.tag == "Pyramide")
+        {
+            onPyramid = true;
+        }
 
-        //Debug.Log("MoveController.OnCollisionEnter2D()");
         if (coll.gameObject.tag == "Ground" && !grounded)
         {
             Destroy(gameObject);
