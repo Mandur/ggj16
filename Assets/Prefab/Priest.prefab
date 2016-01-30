@@ -15,7 +15,7 @@ GameObject:
   - 58: {fileID: 5871930}
   m_Layer: 0
   m_Name: Priest
-  m_TagString: Untagged
+  m_TagString: Priest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,6 +144,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a31e279dfbd09438093e07b9864ce13c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Priest
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 194006}
