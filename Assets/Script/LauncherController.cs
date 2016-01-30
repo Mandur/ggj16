@@ -8,6 +8,7 @@ public class LauncherController : MonoBehaviour
     public Rigidbody2D Bullet;
     private int power = 0;
     private bool selected = false;
+    public ScoreManager score;
     
 
 
@@ -65,6 +66,7 @@ public class LauncherController : MonoBehaviour
 
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
             bullet.velocity = this.transform.right * this.power;
+            score.AddScoreLeft(5);
             ResetLauncher();
         }
     }
