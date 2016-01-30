@@ -91,7 +91,7 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void ResetLauncher()
     {
-        this.power = 0;
+        this.power = 10;
         this.isLaunching = false;
         this.transform.rotation = Quaternion.Euler(0, 0, 270);
         this.transform.localScale = new Vector3(1, 1);
