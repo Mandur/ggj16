@@ -8,7 +8,7 @@ public class LauncherController : MonoBehaviour
     public Rigidbody2D Bullet;
     private int power = 0;
     private bool selected = false;
-    public GameObject PowerIndicator;
+    
 
 
     // Use this for initialization
@@ -45,7 +45,7 @@ public class LauncherController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             this.isLaunching = true;
-            PowerIndicator.GetComponent<SpriteRenderer>().enabled = true;
+            
         }
     }
 
@@ -54,11 +54,10 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void LauncherPower()
     {
-
         if (Input.GetButton("Fire1"))
         {
             this.power += 1;
-            PowerIndicator.transform.localScale += new Vector3(1, 1);
+            this.transform.localScale += new Vector3(0.005f, 0.005f);
         }
 
         if (Input.GetButtonUp("Fire1"))
@@ -79,8 +78,8 @@ public class LauncherController : MonoBehaviour
         this.power = 0;
         this.isLaunching = false;
         this.transform.rotation = Quaternion.Euler(0, 0, 270);
-        PowerIndicator.transform.localScale = new Vector3(0.5f, 0.5f);
-        PowerIndicator.GetComponent<SpriteRenderer>().enabled = false;
+        this.transform.localScale = new Vector3(1, 1);
+
     }
 
 
