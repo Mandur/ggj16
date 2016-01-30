@@ -39,11 +39,15 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void CheckLaunch()
     {
+        //todelete
+        if (Input.GetButton("Fire2"))
+        {
+            score.addScore(1, 5);
+        }
 
+            // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
 
-        // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
-
-        if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1"))
         {
             this.isLaunching = true;
             

@@ -262,7 +262,7 @@ GameObject:
   - 95: {fileID: 382328424}
   - 114: {fileID: 382328423}
   m_Layer: 0
-  m_Name: sang compteur_0 (1)
+  m_Name: sang compteur_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 382328421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: 0.42000008, z: 0}
+  m_LocalPosition: {x: 0.007, y: 0.42000008, z: -1}
   m_LocalScale: {x: 0.9939774, y: 0.59918493, z: -1}
   m_Children: []
   m_Father: {fileID: 631820317}
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd7bd79d95dc3b4f85a254ac8e8de74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pyramide: right
+  pyramide: 1
   score: {fileID: 1475324686}
 --- !u!95 &382328424
 Animator:
@@ -721,7 +721,7 @@ GameObject:
   - 95: {fileID: 1066365714}
   - 114: {fileID: 1066365713}
   m_Layer: 0
-  m_Name: sang compteur_0
+  m_Name: sang compteur_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,8 +734,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066365711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.004, y: 0.42, z: 0}
-  m_LocalScale: {x: 0.9939774, y: 0.59918493, z: -1}
+  m_LocalPosition: {x: 0.004, y: 0.42, z: -1}
+  m_LocalScale: {x: 0.9939774, y: 0.59918493, z: 1}
   m_Children: []
   m_Father: {fileID: 1593680875}
   m_RootOrder: 1
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd7bd79d95dc3b4f85a254ac8e8de74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pyramide: left
+  pyramide: 0
   score: {fileID: 1475324686}
 --- !u!95 &1066365714
 Animator:
