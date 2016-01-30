@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Sprites/asefile/maya.ase.meta
 guid: 2672e46f0302a40a0ac6a26e6e091f63
 timeCreated: 1454146269
+=======
+guid: d883e404b599c43cb8b0a2df5c527fe3
+timeCreated: 1454146378
+>>>>>>> Stashed changes:Assets/Sprites/asefile/maya.ase.meta
 licenseType: Free
 DefaultImporter:
   userData: 
