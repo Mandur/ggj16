@@ -173,7 +173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!212 &189472082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -436,6 +436,10 @@ Prefab:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11483058, guid: 44232da17cd47604b9f45c01510ff218, type: 2}
+      propertyPath: pointer
+      value: 
+      objectReference: {fileID: 193764, guid: 6a7788a0a69d733429ccadcfdc244a52, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44232da17cd47604b9f45c01510ff218, type: 2}
   m_IsPrefabParent: 0
