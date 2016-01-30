@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: spr_skinny_idle
+  m_Name: spr_gros_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,9 +19,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 5e1d2fe446e26455cbf5d1344f5262ae, type: 3}
+      value: {fileID: 21300000, guid: 12df4aa4b9059c34ca91c98d0c94c15e, type: 3}
     - time: 0.25
-      value: {fileID: 21300002, guid: 5e1d2fe446e26455cbf5d1344f5262ae, type: 3}
+      value: {fileID: 21300002, guid: 12df4aa4b9059c34ca91c98d0c94c15e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,8 +40,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 5e1d2fe446e26455cbf5d1344f5262ae, type: 3}
-    - {fileID: 21300002, guid: 5e1d2fe446e26455cbf5d1344f5262ae, type: 3}
+    - {fileID: 21300000, guid: 12df4aa4b9059c34ca91c98d0c94c15e, type: 3}
+    - {fileID: 21300002, guid: 12df4aa4b9059c34ca91c98d0c94c15e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
