@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LauncherController : MonoBehaviour {
+public class LauncherController : MonoBehaviour
+{
 
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
@@ -10,13 +11,14 @@ public class LauncherController : MonoBehaviour {
     public GameObject PowerIndicator;
 
 
-	// Use this for initialization
-	void Start () {
-      
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
     {
 
         CheckLaunch();
@@ -27,7 +29,7 @@ public class LauncherController : MonoBehaviour {
             LauncherPower();
         }
         else {
-           
+
         }
     }
 
@@ -36,9 +38,9 @@ public class LauncherController : MonoBehaviour {
     /// </summary>
     private void CheckLaunch()
     {
-    
 
-       // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
+
+        // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -52,11 +54,11 @@ public class LauncherController : MonoBehaviour {
     /// </summary>
     private void LauncherPower()
     {
-      
+
         if (Input.GetButton("Fire1"))
         {
             this.power += 1;
-            PowerIndicator.transform.localScale += new Vector3(1,1);
+            PowerIndicator.transform.localScale += new Vector3(1, 1);
         }
 
         if (Input.GetButtonUp("Fire1"))
