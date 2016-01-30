@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:Assets/Sprites/fleche maya.png.meta~Stashed changes.meta
 guid: 4c8e717721ca69144b37bfbb77d29303
 timeCreated: 1454111145
@@ -6,6 +7,10 @@ timeCreated: 1454111145
 guid: 2fe9f5602c4c4492db7a400a6b8e16ca
 timeCreated: 1454111313
 >>>>>>> Stashed changes:Assets/Sprites/fleche maya.png.meta~Stashed changes.meta
+=======
+guid: 21de423cce30a4d428ae24f5e8b0a22c
+timeCreated: 1454111030
+>>>>>>> Stashed changes
 licenseType: Free
 DefaultImporter:
   userData: 
