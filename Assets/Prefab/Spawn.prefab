@@ -39,8 +39,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd962ada1530f8d42822f78b77ab5685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters: {fileID: 5025246, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
-  spawnEvery: 5
+  characters:
+  - {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
+  spawnEvery: 1
+  direction: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -48,6 +50,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: characters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: characters
       value: 
@@ -64,6 +70,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnEvery
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: characters.Array.data[0]
+      value: 
+      objectReference: {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165118}
