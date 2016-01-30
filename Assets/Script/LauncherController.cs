@@ -58,11 +58,21 @@ public class LauncherController : MonoBehaviour {
         if (Input.GetButtonUp("Fire1"))
         {
 
-            Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet,this.transform.position,this.transform.rotation);
-              bullet.velocity =this.transform.right*this.power;
-            this.power = 0;
-            this.isLaunching = false;
+            Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
+            bullet.velocity = this.transform.right * this.power;
+            ResetLauncher();
         }
+    }
+
+
+    /// <summary>
+    /// Method to reset the Launcher
+    /// </summary>
+    private void ResetLauncher()
+    {
+        this.power = 0;
+        this.isLaunching = false;
+        this.transform.rotation = Quaternion.Euler(0, 0, 270);
     }
 
 
