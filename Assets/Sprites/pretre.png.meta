@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 67695e15a4e62724c9d643efccb3fbad
+timeCreated: 1454164588
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: spr_pretre_idle_0
+    21300002: spr_pretre_idle_1
+    21300004: spr_pretre_idle_2
+    21300006: spr_pretre_idle_3
+    21300008: pretre_4
+    21300010: pretre_5
+    21300012: pretre_6
+    21300014: pretre_7
+    21300016: pretre_8
+    21300018: pretre_9
+    21300020: pretre_10
+    21300022: pretre_11
+    21300024: pretre_12
+    21300026: pretre_13
+    21300028: pretre_14
+    21300030: pretre_15
+    21300032: pretre_16
+    21300034: pretre_17
+    21300036: pretre_18
+    21300038: pretre_19
+    21300040: pretre_20
+    21300042: pretre_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -15,7 +39,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -36,18 +60,436 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 7
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: spr_pretre_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 13}
+        - {x: 4, y: 13}
+        - {x: -1, y: 9}
+        - {x: -10, y: -1}
+        - {x: -10, y: -9}
+        - {x: 9, y: -9}
+        - {x: 11, y: -6}
+        - {x: 11, y: 10}
+    - name: spr_pretre_idle_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 4}
+        - {x: -10, y: -9}
+        - {x: 9, y: -9}
+        - {x: 10, y: -8}
+        - {x: 10, y: 11}
+        - {x: 8, y: 13}
+    - name: spr_pretre_idle_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 13}
+        - {x: -10, y: 2}
+        - {x: -10, y: -7}
+        - {x: -9, y: -9}
+        - {x: 8, y: -9}
+        - {x: 12, y: -5}
+        - {x: 12, y: 13}
+    - name: spr_pretre_idle_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 13}
+        - {x: 0, y: 13}
+        - {x: -10, y: -2}
+        - {x: -10, y: -7}
+        - {x: -8, y: -9}
+        - {x: 8, y: -9}
+        - {x: 10, y: -8}
+        - {x: 12, y: 0}
+        - {x: 12, y: 4}
+    - name: pretre_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 13}
+        - {x: -2, y: 13}
+        - {x: -11, y: 4}
+        - {x: -11, y: -8}
+        - {x: -10, y: -9}
+        - {x: 4, y: -9}
+        - {x: 6, y: -8}
+        - {x: 7, y: 2}
+        - {x: 7, y: 11}
+    - name: pretre_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 12}
+        - {x: -11, y: 0}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 6, y: -9}
+        - {x: 11, y: 6}
+        - {x: 11, y: 8}
+        - {x: 6, y: 12}
+    - name: pretre_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 11}
+        - {x: -11, y: 1}
+        - {x: -11, y: -7}
+        - {x: -10, y: -9}
+        - {x: 5, y: -9}
+        - {x: 11, y: 3}
+        - {x: 11, y: 10}
+        - {x: 9, y: 11}
+    - name: pretre_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 10}
+        - {x: -2, y: 8}
+        - {x: -11, y: 0}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 5, y: -9}
+        - {x: 10, y: 3}
+        - {x: 10, y: 7}
+        - {x: 7, y: 10}
+    - name: pretre_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 12}
+        - {x: -10, y: 7}
+        - {x: -10, y: -9}
+        - {x: 8, y: -9}
+        - {x: 9, y: 0}
+        - {x: 9, y: 8}
+        - {x: 6, y: 12}
+    - name: pretre_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 10}
+        - {x: -11, y: 5}
+        - {x: -11, y: -8}
+        - {x: -10, y: -9}
+        - {x: 5, y: -9}
+        - {x: 8, y: -8}
+        - {x: 9, y: -3}
+        - {x: 9, y: 8}
+        - {x: 4, y: 10}
+    - name: pretre_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 9}
+        - {x: -11, y: 9}
+        - {x: -11, y: -8}
+        - {x: -8, y: -9}
+        - {x: 5, y: -9}
+        - {x: 10, y: -1}
+        - {x: 10, y: 5}
+    - name: pretre_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 9}
+        - {x: -1, y: 9}
+        - {x: -11, y: 1}
+        - {x: -11, y: -8}
+        - {x: -9, y: -9}
+        - {x: 6, y: -9}
+        - {x: 6, y: -8}
+        - {x: 7, y: -3}
+        - {x: 7, y: 7}
+    - name: pretre_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 9}
+        - {x: -11, y: 3}
+        - {x: -11, y: -9}
+        - {x: 7, y: -9}
+        - {x: 7, y: 7}
+        - {x: 3, y: 9}
+    - name: pretre_13
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 12}
+        - {x: -11, y: 0}
+        - {x: -11, y: -9}
+        - {x: 6, y: -9}
+        - {x: 8, y: 2}
+        - {x: 8, y: 10}
+        - {x: 5, y: 12}
+    - name: pretre_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 12}
+        - {x: -11, y: 1}
+        - {x: -11, y: -8}
+        - {x: -10, y: -9}
+        - {x: 9, y: -9}
+        - {x: 11, y: 1}
+        - {x: 11, y: 12}
+    - name: pretre_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -11, y: 8}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 6, y: -9}
+        - {x: 14, y: 0}
+        - {x: 14, y: 10}
+        - {x: 6, y: 16}
+    - name: pretre_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 14}
+        - {x: -3, y: 14}
+        - {x: -11, y: 4}
+        - {x: -11, y: -8}
+        - {x: -10, y: -9}
+        - {x: 6, y: -9}
+        - {x: 11, y: 0}
+        - {x: 11, y: 9}
+    - name: pretre_17
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 13}
+        - {x: 0, y: 13}
+        - {x: -2, y: 12}
+        - {x: -11, y: 2}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 12, y: -9}
+        - {x: 13, y: -6}
+        - {x: 13, y: 0}
+    - name: pretre_18
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 13}
+        - {x: -11, y: -1}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: 12}
+        - {x: 3, y: 13}
+      - - {x: 7, y: -5}
+        - {x: 10, y: -9}
+        - {x: 13, y: -9}
+        - {x: 15, y: -7}
+        - {x: 14, y: -4}
+        - {x: 9, y: -2}
+    - name: pretre_19
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 13}
+        - {x: -11, y: -1}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: 12}
+        - {x: 3, y: 13}
+    - name: pretre_20
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 13}
+        - {x: -10, y: -2}
+        - {x: -10, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: 8}
+        - {x: 6, y: 13}
+    - name: pretre_21
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 13}
+        - {x: -11, y: -1}
+        - {x: -11, y: -6}
+        - {x: -10, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: 12}
+        - {x: 3, y: 13}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
