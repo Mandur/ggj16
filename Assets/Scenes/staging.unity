@@ -254,6 +254,10 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
+      propertyPath: spawnEvery
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
   m_IsPrefabParent: 0
@@ -452,25 +456,7 @@ Prefab:
       propertyPath: m_Name
       value: Priest left
       objectReference: {fileID: 0}
-    - target: {fileID: 5871930, guid: 745202d29fe727c40b47a28a9aa15d42, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5871930, guid: 745202d29fe727c40b47a28a9aa15d42, type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5871930, guid: 745202d29fe727c40b47a28a9aa15d42, type: 2}
-      propertyPath: m_Radius
-      value: 0.1542036
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 745202d29fe727c40b47a28a9aa15d42, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &631820317 stripped

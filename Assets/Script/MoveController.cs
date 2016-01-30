@@ -37,6 +37,10 @@ public class MoveController : MonoBehaviour
         {
             onPyramid = true;
         }
+        else
+        {
+            onPyramid=false;
+        }
 
         if (coll.gameObject.tag == "Ground" && !grounded)
         {
