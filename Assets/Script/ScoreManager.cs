@@ -20,6 +20,17 @@ public class ScoreManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-	
+        if (Score[0] > 100) {
+            Win(0);
+        }
+        else if (Score[1] > 100)
+        {
+            Win(1);
+        }
 	}
+
+    void Win (int player)
+    {
+
+    }
 }
