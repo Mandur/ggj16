@@ -43,7 +43,11 @@ public class LauncherController : MonoBehaviour
     /// </summary>
     private void CheckLaunch()
     {
-
+        //todelete
+        if (Input.GetButton("Fire2"))
+        {
+            score.addScore(1, 5);
+        }
 
         // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
         
@@ -72,7 +76,7 @@ public class LauncherController : MonoBehaviour
 
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
             bullet.velocity = this.transform.right * this.power;
-            score.AddScoreLeft(5);
+            score.addScore(0, 5);
             ResetLauncher();
         }
     }
