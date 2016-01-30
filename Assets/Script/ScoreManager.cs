@@ -31,6 +31,8 @@ public class ScoreManager : MonoBehaviour {
 
     void Win (int player)
     {
-
+        string str = "P" + player + "W";
+        var win = this.transform.Find(str);
+        win.gameObject.SetActive(true);
     }
 }
