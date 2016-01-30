@@ -24,7 +24,7 @@ public class EnvironmentManager : MonoBehaviour {
         {
             CondorTimer = Random.Range(1, 10);
             GameObject created= Instantiate(Condor);
-            if (Random.Range(0, 1) == 0)
+            if (Random.Range(0, 2) == 0)
             {
                 created.transform.position = new Vector2(-3.5f,Random.Range(0, 1.85f));
                 created.GetComponent<FlyingShitScript>().speed = Random.Range(0.5f, 5);
@@ -32,7 +32,7 @@ public class EnvironmentManager : MonoBehaviour {
             else
             {
                 created.transform.position = new Vector2(3.5f, Random.Range(0, 1.85f));
-                created.transform.localScale = new Vector2(0, -1);
+                created.transform.rotation = Quaternion.Euler(0, 180, 0);
                 created.GetComponent<FlyingShitScript>().speed = Random.Range(-0.5f, -5);
             }
         }
