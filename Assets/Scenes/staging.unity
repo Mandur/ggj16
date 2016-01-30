@@ -527,17 +527,11 @@ Prefab:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 11483058, guid: 44232da17cd47604b9f45c01510ff218, type: 2}
       propertyPath: pointer
       value: 
       objectReference: {fileID: 193764, guid: 6a7788a0a69d733429ccadcfdc244a52, type: 2}
-=======
-    - target: {fileID: 21269242, guid: 44232da17cd47604b9f45c01510ff218, type: 2}
-      propertyPath: m_SortingLayerID
-      value: 554518287
-      objectReference: {fileID: 0}
->>>>>>> origin/master
+
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44232da17cd47604b9f45c01510ff218, type: 2}
   m_IsPrefabParent: 0
