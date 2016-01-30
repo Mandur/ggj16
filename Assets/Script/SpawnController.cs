@@ -24,7 +24,8 @@ public class SpawnController : MonoBehaviour
     void Spawn()
     {
 
-        GameObject c = (GameObject)Instantiate(characters[Mathf.FloorToInt(Random.value)], transform.position, transform.rotation);
-        c.GetComponent<MoveController>().side = this.side;
+        GameObject c = (GameObject)Instantiate(characters[Mathf.FloorToInt(Random.value*characters.Count)], transform.position, transform.rotation);
+        //c.GetComponent<MoveController>().side = this.side;
+        c.GetComponent<MoveController>().CheckSide();
     }
 }

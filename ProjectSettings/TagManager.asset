@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Poulet
   - Priest
+  - Ground
   layers:
   - Default
   - TransparentFX

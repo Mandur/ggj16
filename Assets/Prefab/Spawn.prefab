@@ -42,6 +42,7 @@ MonoBehaviour:
   characters:
   - {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
   - {fileID: 105390, guid: f16fa2423f7504a599e2e828893dbb87, type: 2}
+  - {fileID: 121426, guid: 17b7a2f8736ca452b84ecadb5ab0e492, type: 2}
   spawnEvery: 1
   side: 1
 --- !u!1001 &100100000
@@ -53,7 +54,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: characters.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: characters
@@ -86,7 +87,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: characters.Array.data[2]
       value: 
-      objectReference: {fileID: 194006, guid: 8a6be6a7cbc284e1ea731a0898facc5c, type: 2}
+      objectReference: {fileID: 121426, guid: 17b7a2f8736ca452b84ecadb5ab0e492, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165118}

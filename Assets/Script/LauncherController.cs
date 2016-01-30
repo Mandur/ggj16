@@ -11,8 +11,9 @@ public class LauncherController : MonoBehaviour
     public ScoreManager score;
     public int side = 0;
 
-
-    private GameObject target;
+    public float selectionInterval = .01f;
+    private float selectionTimer = 0;
+    public GameObject target;
 
 
     // Use this for initialization
@@ -73,11 +74,14 @@ public class LauncherController : MonoBehaviour
 
         if (Input.GetButtonUp("Fire1"))
         {
+            //Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
+            //bullet.velocity = this.transform.right * this.power;
 
-            Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
-            bullet.velocity = this.transform.right * this.power;
-            score.addScore(0, 5);
-            ResetLauncher();
+            target.GetComponent<Rigidbody2D>().velocity = this.transform.right * this.power *0.1f;
+            target.GetComponent<MoveController>().grounded = false;
+            FindACharToPoint();
+             //score.addScore(0, 5);
+             ResetLauncher();
         }
     }
 
@@ -109,32 +113,71 @@ public class LauncherController : MonoBehaviour
     }
     private void CheckSelection()
     {
+        var input = Input.GetAxis("Horizontal");
+        //  Debug.Log(selectionTimer+"*"+ Time.deltaTime);
+        selectionTimer -= Time.deltaTime;
+        if (Mathf.Abs(input) > 0.1 && selectionTimer <= 0)
+        {
+            FindNextCharToPoint(Mathf.Sign(input));
+        }
 
+        if (Mathf.Abs(input) < 0.1)
+        {
+            selectionTimer = 0;
+        }
+        
     }
     private void UpdatePosition()
     {
-        Debug.Log(target + "*");
+        //Debug.Log(target + "*"+side);
         if (target == null)
         {
-            target = FindACharToPoint();
+             FindACharToPoint();
         }
         
         if (target != null)
         {
-           transform.position = target.transform.position;
+           transform.position = target.transform.position + new Vector3(0, 0.55f);
         }
     }
-    private GameObject FindACharToPoint()
+    private void FindACharToPoint()
     {
 
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject c in objs)
         {
-            if (c.GetComponent<MoveController>().side == this.side)
-                return c;
+            if (c.GetComponent<MoveController>().side == this.side
+                  && c.GetComponent<MoveController>().grounded) { 
+                target = c;
+                return;
+            }
         }
-        return null;
     }
+    private void FindNextCharToPoint(float direction)
+    {
 
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        GameObject next = null;
+        float maxDist = 10000000f;
+        foreach (GameObject c in objs)
+        {
+            if (c.GetComponent<MoveController>().side == side
+                && c.GetComponent<MoveController>().grounded
+                && ((direction < 0 && target.transform.position.x > c.transform.position.x) 
+                || (direction > 0 && target.transform.position.x < c.transform.position.x))) {
+                float dist = Mathf.Abs(target.transform.position.x - c.transform.position.x);
+                if (dist < maxDist)
+                {
+                    maxDist = dist;
+                    next = c;
+                    selectionTimer = selectionInterval;
+                }
+            }
+        }
+        if (next != null)
+        {
+            target = next;
+        }
+    }
 
 }

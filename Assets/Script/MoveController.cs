@@ -27,28 +27,40 @@ public class MoveController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Priest")
+        if (coll.gameObject.tag == "Ground")
         {
-            Debug.Log(coll.gameObject.tag + "*");
-            //Destroy(gameObject);
+            this.grounded = true;
+            CheckSide();
         }
-
-        //coll.gameObject.SendMessage("ApplyDamage", 10);
 
     }
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Priest")
+        if (coll.gameObject.tag == "Priest" && this.grounded)
         {
-            Debug.Log(coll.gameObject.tag + "*");
-
             ScoreManager sm = Object.FindObjectOfType<ScoreManager>();
+            sm.addScore(side, 1);
             Destroy(gameObject);
         }
 
         //sm.
 
         //coll.gameObject.SendMessage("ApplyDamage", 10);
+
+    }
+
+    public void CheckSide()
+    {
+        if (transform.position.x < 0)
+        {
+            side = 0;
+            GetComponent<Transform>().localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            side = 1;
+            GetComponent<Transform>().localScale = new Vector3(1, 1, 1);
+        }
 
     }
 }
