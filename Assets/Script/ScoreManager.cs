@@ -3,23 +3,20 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour {
 
-    public int ScoreLeft=0;
-    public int ScoreRight=0;
+    public int [] Score=new int [2];
+
 
 	// Use this for initialization
 	void Start () {
-	
+        Score[0] = 1;
+        Score[1] = 1;
 	}
 	
-    public void AddScoreLeft(int score)
+    public void addScore(int pyramide, int value)
     {
-        ScoreLeft += score;
+        Score[pyramide] += value;
     }
 
-    public void AddScoreRight(int score)
-    {
-        ScoreRight += score;
-    }
 
     // Update is called once per frame
     void Update () {

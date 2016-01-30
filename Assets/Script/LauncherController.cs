@@ -66,7 +66,7 @@ public class LauncherController : MonoBehaviour
 
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
             bullet.velocity = this.transform.right * this.power;
-            score.AddScoreLeft(5);
+            score.addScore(0, 5);
             ResetLauncher();
         }
     }
