@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9551078}
   - 50: {fileID: 5019636}
   - 58: {fileID: 5875096}
+  - 114: {fileID: 11424382}
   m_Layer: 0
   m_Name: Esclave_Gros
   m_TagString: Player
@@ -79,6 +80,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11424382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3982b666a3f4047478988e923bc81d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  side: 0
+  grounded: 1
 --- !u!212 &21222222
 SpriteRenderer:
   m_ObjectHideFlags: 1
