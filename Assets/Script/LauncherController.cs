@@ -9,7 +9,10 @@ public class LauncherController : MonoBehaviour
     private int power = 0;
     private bool selected = false;
     public ScoreManager score;
-    
+    public int side = 0;
+
+
+    private GameObject target;
 
 
     // Use this for initialization
@@ -30,8 +33,9 @@ public class LauncherController : MonoBehaviour
             LauncherPower();
         }
         else {
-
+            CheckSelection();
         }
+        UpdatePosition();
     }
 
     /// <summary>
@@ -42,6 +46,8 @@ public class LauncherController : MonoBehaviour
 
 
         // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
+        
+
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -96,6 +102,34 @@ public class LauncherController : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(0, 0, angle);
 
 
+    }
+    private void CheckSelection()
+    {
+
+    }
+    private void UpdatePosition()
+    {
+        Debug.Log(target + "*");
+        if (target == null)
+        {
+            target = FindACharToPoint();
+        }
+        
+        if (target != null)
+        {
+           transform.position = target.transform.position;
+        }
+    }
+    private GameObject FindACharToPoint()
+    {
+
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject c in objs)
+        {
+            if (c.GetComponent<MoveController>().side == this.side)
+                return c;
+        }
+        return null;
     }
 
 

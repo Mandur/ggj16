@@ -7,7 +7,7 @@ public class SpawnController : MonoBehaviour
 
     public List<GameObject> characters;
     public int spawnEvery = 1;
-    public int direction = 1;
+    public int side = 1;
 
     // Use this for initialization
     void Start()
@@ -24,7 +24,7 @@ public class SpawnController : MonoBehaviour
     void Spawn()
     {
 
-        GameObject c = (GameObject)Instantiate(characters[0], transform.position, transform.rotation);
-        c.GetComponent<MoveController>().direction = this.direction;
+        GameObject c = (GameObject)Instantiate(characters[Mathf.FloorToInt(Random.value)], transform.position, transform.rotation);
+        c.GetComponent<MoveController>().side = this.side;
     }
 }

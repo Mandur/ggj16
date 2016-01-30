@@ -5,7 +5,7 @@ public class MoveController : MonoBehaviour
 {
 
     public float speed = 0.5f;
-    public int direction = 1;
+    public int side = 0;
     // Use this for initialization
     void Start()
     {
@@ -15,7 +15,9 @@ public class MoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0f);
+
+        int direction = side == 0 ? 1 : -1;
+        GetComponent<Rigidbody2D>().velocity = new Vector3(direction * speed, 0f);
 
         // Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet, this.transform.position, this.transform.rotation);
         // bullet.velocity = this.transform.right * this.power;
@@ -36,8 +38,12 @@ public class MoveController : MonoBehaviour
         if (coll.gameObject.tag == "Priest")
         {
             Debug.Log(coll.gameObject.tag + "*");
+
+            ScoreManager sm = Object.FindObjectOfType<ScoreManager>();
             Destroy(gameObject);
         }
+
+        //sm.
 
         //coll.gameObject.SendMessage("ApplyDamage", 10);
 
