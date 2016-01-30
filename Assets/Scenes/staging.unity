@@ -189,6 +189,10 @@ Prefab:
       propertyPath: m_Name
       value: Spawn left
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
+      propertyPath: side
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
   m_IsPrefabParent: 0
@@ -219,7 +223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!212 &189472082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -899,17 +903,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11425504, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
-      propertyPath: direction
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 165118, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
       propertyPath: m_Name
       value: Spawn right
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425504, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
-      propertyPath: side
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
