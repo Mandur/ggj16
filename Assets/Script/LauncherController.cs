@@ -6,6 +6,8 @@ public class LauncherController : MonoBehaviour {
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
     private int power = 0;
+    private bool selected = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +17,32 @@ public class LauncherController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        LauncherRotation();
 
-        LauncherPower();
+        CheckLaunch();
 
+        if (this.isLaunching)
+        {
+            LauncherRotation();
+            LauncherPower();
+        }
+        else {
+           
+        }
+    }
+
+    /// <summary>
+    /// Check if launch
+    /// </summary>
+    private void CheckLaunch()
+    {
+    
+
+       // pointer.transform.position= new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y + Input.GetAxis("Vertical"),-1);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            this.isLaunching = true;
+        }
     }
 
     /// <summary>
@@ -26,20 +50,18 @@ public class LauncherController : MonoBehaviour {
     /// </summary>
     private void LauncherPower()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            this.isLaunching = true;
-        }
+      
         if (Input.GetButton("Fire1"))
         {
             this.power += 1;
         }
         if (Input.GetButtonUp("Fire1"))
         {
+
             Rigidbody2D bullet = (Rigidbody2D)Instantiate(Bullet,this.transform.position,this.transform.rotation);
-            bullet.velocity =this.transform.right*this.power;
+              bullet.velocity =this.transform.right*this.power;
             this.power = 0;
-            
+            this.isLaunching = false;
         }
     }
 
@@ -50,10 +72,12 @@ public class LauncherController : MonoBehaviour {
     private void LauncherRotation()
     {
 
-        if (Input.GetAxis("Horizontal") !=0)
-        {
-            this.transform.Rotate(new Vector3(0, 0, Input.GetAxis("Horizontal")));
-        }
-       
+        //You may have to play around with/switch the y and x
+        var angle = Mathf.Atan2(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal")) * Mathf.Rad2Deg;
+        this.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+
     }
+
+
 }
