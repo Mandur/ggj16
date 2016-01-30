@@ -1,0 +1,40 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class EnvironmentManager : MonoBehaviour {
+
+    private float CondorTimer=3;
+    public GameObject Condor;
+	// Use this for initialization
+	void Start () {
+	    
+	}
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        CondorTimer -= Time.deltaTime;
+        Spawn();
+        
+    }
+
+    private void Spawn()
+    {
+        if (CondorTimer < 0)
+        {
+            CondorTimer = Random.Range(1, 10);
+            GameObject created= Instantiate(Condor);
+            if (Random.Range(0, 1) == 0)
+            {
+                created.transform.position = new Vector2(-3.5f,Random.Range(0, 1.85f));
+                created.GetComponent<FlyingShitScript>().speed = Random.Range(0.5f, 5);
+            }
+            else
+            {
+                created.transform.position = new Vector2(3.5f, Random.Range(0, 1.85f));
+                created.transform.localScale = new Vector2(0, -1);
+                created.GetComponent<FlyingShitScript>().speed = Random.Range(-0.5f, -5);
+            }
+        }
+    }
+}
