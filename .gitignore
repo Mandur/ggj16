@@ -29,5 +29,5 @@ sysinfo.txt
 
 # include meta files
 !*.*.meta
-
-
+*.meta
+*.meta

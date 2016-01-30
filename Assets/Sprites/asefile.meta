@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 94e6c3bc87de7404e82a418eae881e42
 folderAsset: yes
 timeCreated: 1454146269
+=======
+guid: de26628c89dcf41f0940ee5d03de1606
+folderAsset: yes
+timeCreated: 1454146378
+>>>>>>> Stashed changes
 licenseType: Free
 DefaultImporter:
   userData: 
