@@ -70,7 +70,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105390}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0bc34daa7e4354620b5de78448505507, type: 2}
   m_CullingMode: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   speed: 0.5
   side: 0
   grounded: 1
+  onPyramid: 0
 --- !u!212 &21222222
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -138,6 +139,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Mass
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
