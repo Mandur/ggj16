@@ -85,6 +85,90 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &13828412
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.9162288
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.714688
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449524, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a725dc6e0d0904a7d825c4882c4868ec, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &269397891
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.9449711
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.5962815
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418306, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 24ce0f98de8774c1db409bafff6225e7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &349249516
 Prefab:
   m_ObjectHideFlags: 0
@@ -164,7 +248,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 420370, guid: 2a4000945886b4094aa49034758ffa9d, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 153920, guid: 2a4000945886b4094aa49034758ffa9d, type: 2}
       propertyPath: m_Name
@@ -233,7 +317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1001 &617743070
 Prefab:
   m_ObjectHideFlags: 0
