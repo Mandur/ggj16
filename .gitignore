@@ -27,34 +27,5 @@ ExportedObj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
-<<<<<<< HEAD
-ProjectSettings/ProjectSettings.asset
-=======
-Assets/Scenes/Test_pyramide002.unity
-
-Assets/Scenes/Test_pyramide002.unity
-
-Assets/Scenes/Test_pyramide002.unity
->>>>>>> origin/master
-
-Assets/Scenes/Test_pyramide002.unity
-
-ProjectSettings/ProjectSettings.asset
-
-Assets/Sprites/fleche maya.png.meta~Stashed changes.meta
-
-<<<<<<< Updated upstream
-Assets/Sprites/maya.png.meta
-=======
-Assets/maya_0.controller.meta
-
-Assets/mur.mat
-
-Assets/Sprites/fleche maya.png.meta~Stashed changes.meta
-
-Assets/Sprites/Materials/mais.mat.meta
->>>>>>> Stashed changes
-
-ProjectSettings/UnityAnalyticsManager.asset
-
-Assets/Sprites/asefile.meta
+# include meta files
+!*.*.meta
