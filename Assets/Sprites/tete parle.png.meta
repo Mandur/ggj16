@@ -1,9 +1,17 @@
 fileFormatVersion: 2
-guid: 3e517a9b8f1205b47866b0b6e4a9a504
-timeCreated: 1454229948
+guid: 9e3fc00775d5c495c9822b771267dd50
+timeCreated: 1454235824
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: tete parle_0
+    21300002: tete parle_1
+    21300004: tete parle_2
+    21300006: tete parle_3
+    21300008: tete parle_4
+    21300010: tete parle_5
+    21300012: tete parle_6
+    21300014: tete parle_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +34,174 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: tete parle_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 35}
+        - {x: -27.5, y: 16}
+        - {x: -27.5, y: -26}
+        - {x: -17.5, y: -35}
+        - {x: 25.5, y: -35}
+        - {x: 27.5, y: -34}
+        - {x: 27.5, y: 35}
+    - name: tete parle_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
+    - name: tete parle_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 35}
+        - {x: -27.5, y: 22}
+        - {x: -27.5, y: -25}
+        - {x: -13.5, y: -35}
+        - {x: 27.5, y: -35}
+        - {x: 27.5, y: 31}
+        - {x: 20.5, y: 35}
     outline: []
   spritePackingTag: 
   userData: 

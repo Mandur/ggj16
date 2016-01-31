@@ -15,9 +15,10 @@ public class PriestScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.tag == "Player")
+		if (coll.tag == "Player" && coll.gameObject.GetComponent<MoveController>().disabled == false)
         {
-            animator.SetBool("Sacrifice", true);
+            animator.SetTrigger("SacrificeTrigger");
+			GetComponent<AudioSource>().Play();
         }
    
 

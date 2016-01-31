@@ -6,10 +6,11 @@ public class LauncherController : MonoBehaviour
 
     private bool isLaunching = false;
     public Rigidbody2D Bullet;
-    private int power = 1000;
+    private int power = 1000000;
     //private bool selected = false;
     public ScoreManager score;
     public int side = 0;
+	public int LauchPower = 5;
 
     public float selectionInterval = .01f;
     private float selectionTimer = 0;
@@ -65,7 +66,7 @@ public class LauncherController : MonoBehaviour
         if (Input.GetButtonUp("j" + side + "Fire1"))
         {
             target.transform.rotation = this.transform.rotation;
-            target.GetComponent<Rigidbody2D>().AddForce(target.transform.right * 12*power);
+            target.GetComponent<Rigidbody2D>().AddForce(target.transform.right * LauchPower*power);
             target.GetComponent<MoveController>().grounded = false;
             target.GetComponent<MoveController>().onPyramid = false;
             target.GetComponent<MoveController>().disabled = true;
@@ -74,7 +75,7 @@ public class LauncherController : MonoBehaviour
 
             if (target.name.Contains("Gros"))
             {
-                target.GetComponent<CircleCollider2D>().radius *= 2;
+                target.GetComponent<CircleCollider2D>().radius *= 3;
                 
             }
             if (target.name.Contains("skin"))

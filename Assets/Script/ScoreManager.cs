@@ -20,10 +20,10 @@ public class ScoreManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Score[0] > 100) {
+        if (Score[0] > 80) {
             Win(0);
         }
-        else if (Score[1] > 100)
+        else if (Score[1] > 80)
         {
             Win(1);
         }
@@ -35,9 +35,10 @@ public class ScoreManager : MonoBehaviour {
         var win = this.transform.Find(str);
         win.gameObject.SetActive(true);
       
+		finish();
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
-        finish();
+
     }
 
     IEnumerable finish()

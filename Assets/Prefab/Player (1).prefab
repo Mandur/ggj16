@@ -43,6 +43,7 @@ MonoBehaviour:
   Bullet: {fileID: 5091246, guid: 6a7788a0a69d733429ccadcfdc244a52, type: 2}
   score: {fileID: 0}
   side: 0
+  LauchPower: 8
   selectionInterval: 0.15
   target: {fileID: 0}
 --- !u!212 &21251574
@@ -85,6 +86,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: selectionInterval
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: LauchPower
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

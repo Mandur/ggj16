@@ -26,14 +26,14 @@ public class EnvironmentManager : MonoBehaviour {
             GameObject created= Instantiate(Condor);
             if (Random.Range(0, 2) == 0)
             {
-                created.transform.position = new Vector2(-3.5f,Random.Range(0, 1.85f));
-                created.GetComponent<FlyingShitScript>().speed = Random.Range(0.5f, 5);
+                created.transform.position = new Vector2(-3.5f,Random.Range(0, 1f));
+                created.GetComponent<FlyingShitScript>().speed = Random.Range(0.5f, 2);
             }
             else
             {
-                created.transform.position = new Vector2(3.5f, Random.Range(0, 1.85f));
+                created.transform.position = new Vector2(3.5f, Random.Range(0, 1f));
                 created.transform.rotation = Quaternion.Euler(0, 180, 0);
-                created.GetComponent<FlyingShitScript>().speed = Random.Range(-0.5f, -5);
+                created.GetComponent<FlyingShitScript>().speed = Random.Range(-0.5f, -2);
             }
         }
     }
