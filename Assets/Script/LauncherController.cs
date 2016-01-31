@@ -65,11 +65,22 @@ public class LauncherController : MonoBehaviour
         if (Input.GetButtonUp("j" + side + "Fire1"))
         {
             target.transform.rotation = this.transform.rotation;
-            target.GetComponent<Rigidbody2D>().AddForce(target.transform.right * 8*power);
+            target.GetComponent<Rigidbody2D>().AddForce(target.transform.right * 12*power);
             target.GetComponent<MoveController>().grounded = false;
             target.GetComponent<MoveController>().onPyramid = false;
             target.GetComponent<MoveController>().disabled = true;
             target.GetComponent<CircleCollider2D>().isTrigger = true;
+            target.GetComponent<Animator>().SetBool("InTheAir", true);  
+
+            if (target.name.Contains("Gros"))
+            {
+                target.GetComponent<CircleCollider2D>().radius *= 2;
+                
+            }
+            if (target.name.Contains("skin"))
+            {
+                target.GetComponent<CircleCollider2D>().radius /= 2;
+            }
             Destroy(target,5);
             //FindACharToPoint();
             CheckSelection();

@@ -34,5 +34,14 @@ public class ScoreManager : MonoBehaviour {
         string str = "P" + player + "W";
         var win = this.transform.Find(str);
         win.gameObject.SetActive(true);
+      
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
+        finish();
+    }
+
+    IEnumerable finish()
+    {
+        yield return new WaitForSeconds(5);  // or however long you want it to wait
     }
 }

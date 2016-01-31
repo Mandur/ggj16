@@ -1155,6 +1155,10 @@ Prefab:
       propertyPath: m_Name
       value: Spawn right
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
+      propertyPath: spawnEvery
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 650f68ea584c13346af2f00437bdeb6c, type: 2}
   m_IsPrefabParent: 0

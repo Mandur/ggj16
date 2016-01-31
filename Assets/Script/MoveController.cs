@@ -46,40 +46,52 @@ public class MoveController : MonoBehaviour
             else
                 Destroy(this);
         }
-        else
-        {
-            onPyramid=false;
-        }
+        
 
         if (coll.gameObject.tag == "Ground" && !grounded)
         {
             Destroy(coll.gameObject);
+            coll.gameObject.GetComponent<Animator>().SetBool("Exploding", true);
         }
         if (grounded && coll.gameObject.tag == "Player" && coll.gameObject.GetComponent<MoveController>().side != side)
         {
-            Destroy(coll.gameObject);
+            Destroy(coll.gameObject,1);
+            coll.gameObject.GetComponent<Animator>().SetBool("Exploding", true);
         }
 
     }
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Priest" && this.grounded)
+        if (coll.gameObject.tag == "Priest" && !this.disabled)
         {
             ScoreManager sm = Object.FindObjectOfType<ScoreManager>();
-            sm.addScore(side, 1);
-            Destroy(gameObject);
+            if (this.name.Contains("gros"))
+            {
+                sm.addScore(side, 15);
+            }
+            else if (this.name.Contains("skin"))
+            {
+                sm.addScore(side, 3);
+            }
+            else sm.addScore(side, 9);
+            this.gameObject.GetComponent<Animator>().SetBool("Exploding", true);
+            Destroy(this.gameObject,1);
         }
 
-        if (disabled)
+        if (disabled&&coll.gameObject.tag == "Player")
         {
-            if (coll.gameObject.GetComponent<MoveController>().side != side)
+            if (coll.gameObject.GetComponent<MoveController>().side != this.side)
             {
-                Destroy(coll.gameObject);   
+                coll.gameObject.GetComponent<Animator>().SetBool("Exploding",true);
+                Destroy(coll.gameObject,1);   
             }
-            else
-            {
-                Destroy(this);
-            }
+          
+        }
+        else if (disabled &&!(coll.gameObject.tag == "Priest"))
+        {
+            this.gameObject.GetComponent<Animator>().SetBool("Exploding", true);
+            Destroy(this,1);
+            
         }
 
         //sm.
