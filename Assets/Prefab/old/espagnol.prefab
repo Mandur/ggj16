@@ -41,7 +41,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 5091246, guid: 6a7788a0a69d733429ccadcfdc244a52, type: 2}
-  BulletSpeed: 100
+  score: {fileID: 0}
+  side: 0
+  selectionInterval: 0.01
+  target: {fileID: 0}
 --- !u!212 &21238012
 SpriteRenderer:
   m_ObjectHideFlags: 1

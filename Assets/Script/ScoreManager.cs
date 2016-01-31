@@ -42,6 +42,6 @@ public class ScoreManager : MonoBehaviour {
 
     IEnumerable finish()
     {
-        yield return new WaitForSeconds(5);  // or however long you want it to wait
+        yield return new WaitForSeconds(20);  // or however long you want it to wait
     }
 }
