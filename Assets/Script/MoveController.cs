@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MoveController : MonoBehaviour
 {
-
+    public ParticleSystem p;
     private float speed = 0.3f;
     public int side = 0;
     public bool grounded = true;
@@ -43,8 +43,7 @@ public class MoveController : MonoBehaviour
         {
             if (grounded == true)
                 onPyramid = true;
-            else
-                Destroy(this);
+            
         }
         else
         {
@@ -74,6 +73,8 @@ public class MoveController : MonoBehaviour
         {
             if (coll.gameObject.GetComponent<MoveController>().side != side)
             {
+                p.transform.position = coll.transform.position;
+                p.Play();
                 Destroy(coll.gameObject);   
             }
             else
